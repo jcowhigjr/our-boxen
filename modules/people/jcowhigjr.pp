@@ -28,7 +28,9 @@ class people::jcowhigjr {
   # include textmate::textmate2::nightly  # nightly releases
    include mou
    include ctags
+   include chrome
   # include titanium
+   include heroku
 
 
 #  $dotfiles  = "${devfolder}/dotfiles"
