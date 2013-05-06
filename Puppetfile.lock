@@ -29,6 +29,11 @@ GITHUBTARBALL
     dropbox (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-elasticsearch
+  specs:
+    elasticsearch (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-emacs
   specs:
     emacs (1.1.0)
@@ -67,6 +72,16 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-icu4c
+  specs:
+    icu4c (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-magican
@@ -109,6 +124,11 @@ GITHUBTARBALL
     pcre (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-phantomjs
+  specs:
+    phantomjs (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
@@ -117,6 +137,11 @@ GITHUBTARBALL
   remote: boxen/puppet-postgresql
   specs:
     postgresql (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-redis
+  specs:
+    redis (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-ruby
@@ -200,6 +225,7 @@ DEPENDENCIES
   ctags (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
+  elasticsearch (= 1.0.0)
   emacs (= 1.1.0)
   firefox (= 1.0.3)
   gcc (= 1.0.0)
@@ -207,9 +233,12 @@ DEPENDENCIES
   graphviz (= 1.0.0)
   growl_fork (= 1.0.4)
   heroku (= 2.0.0)
+  heroku (= 2.0.0)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
+  icu4c (= 1.0.0)
   inifile (= 0.9.0)
+  java (= 1.1.0)
   magican (= 1.0.1)
   mou (= 1.0.0)
   mysql (= 1.0.0)
@@ -218,8 +247,10 @@ DEPENDENCIES
   nvm (= 1.0.0)
   osx (= 1.0.0)
   pcre (= 1.0.0)
+  phantomjs (= 1.0.0)
   pkgconfig (= 1.0.0)
   postgresql (= 1.0.0)
+  redis (= 1.0.0)
   ruby (= 3.1.0)
   skype (= 1.0.2)
   slate (= 1.0.0)

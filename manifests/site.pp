@@ -80,6 +80,7 @@ node default {
  # include textmate::textmate2::nightly  # nightly releases
   include mou
   include ctags
+  include chrome
 #  include titanium
 
 
@@ -114,7 +115,8 @@ node default {
       'findutils',
       'gnu-tar',
       'tree',
-      'htop-osx'
+      'htop-osx',
+      'elinks'
     ]:
   }
 

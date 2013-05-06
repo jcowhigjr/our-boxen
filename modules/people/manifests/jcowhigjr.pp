@@ -6,6 +6,8 @@ class people::jcowhigjr {
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 
+  include projects::rbes
+
 #  $dotfiles  = "${devfolder}/dotfiles"
 #	file { $devfolder: 
 #  	ensure => "directory"
