@@ -81,7 +81,7 @@ node default {
   include mou
   include ctags
   include chrome
-#  include titanium
+  include titanium
 
 
   # include vagrant

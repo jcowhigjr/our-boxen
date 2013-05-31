@@ -191,7 +191,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (1.0.1)
+    vagrant (2.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-vim
@@ -207,6 +207,11 @@ GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
   specs:
     inifile (0.9.0)
+
+GITHUBTARBALL
+  remote: inakiabt/boxen-titanium
+  specs:
+    titanium (1.2.3)
 
 GITHUBTARBALL
   remote: petems/puppet-growl_fork
@@ -260,8 +265,9 @@ DEPENDENCIES
   swig (= 1.0.0)
   sysctl (= 1.0.0)
   textmate (= 1.1.0)
+  titanium (= 1.2.3)
   tmux (= 1.0.0)
-  vagrant (= 1.0.1)
+  vagrant (= 2.0.6)
   vim (= 1.0.0)
   zsh (= 1.0.0)
 

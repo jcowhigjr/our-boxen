@@ -31,7 +31,14 @@ class people::jcowhigjr {
    include chrome
   # include titanium
    include heroku
+   include vagrant
 
+vagrant::plugin { 'vagrant-vmware-fusion':
+  license => 'puppet:///modules/people/joe/licenses/fusion.lic',
+}
+ vagrant::box { 'wheezy64/vmware_fusion':
+    source => 'https://s3.amazonaws.com/github-ops/vagrant/wheezy64-20130320-vmware_fusion.box'
+  }
 
 #  $dotfiles  = "${devfolder}/dotfiles"
 #  file { $devfolder: 
