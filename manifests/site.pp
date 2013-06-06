@@ -81,8 +81,8 @@ node default {
   include mou
   include ctags
   include chrome
-  include titanium
-
+#  include titanium
+   include java
 
   # include vagrant
   # vagrant::plugin { 'vagrant-vmware-fusion':

@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: boxen/puppet-android
+  specs:
+    android (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-autojump
   specs:
     autojump (1.0.0)
@@ -209,11 +214,6 @@ GITHUBTARBALL
     inifile (0.9.0)
 
 GITHUBTARBALL
-  remote: inakiabt/boxen-titanium
-  specs:
-    titanium (1.2.3)
-
-GITHUBTARBALL
   remote: petems/puppet-growl_fork
   specs:
     growl_fork (1.0.4)
@@ -224,6 +224,7 @@ GITHUBTARBALL
     stdlib (3.0.0)
 
 DEPENDENCIES
+  android (= 1.0.0)
   autojump (= 1.0.0)
   boxen (= 1.2.0)
   chrome (= 1.1.0)
@@ -265,7 +266,6 @@ DEPENDENCIES
   swig (= 1.0.0)
   sysctl (= 1.0.0)
   textmate (= 1.1.0)
-  titanium (= 1.2.3)
   tmux (= 1.0.0)
   vagrant (= 2.0.6)
   vim (= 1.0.0)
