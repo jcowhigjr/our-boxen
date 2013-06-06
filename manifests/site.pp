@@ -54,7 +54,6 @@ node default {
   include git
   include hub
   include nginx
-  include nvm
 
 
 #JC likes
