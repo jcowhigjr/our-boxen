@@ -81,8 +81,9 @@ node default {
   include ctags
   include chrome
 #  include titanium
-   include java
-
+  include java
+ # include android
+ # android::platform { 'android-16': }
   # include vagrant
   # vagrant::plugin { 'vagrant-vmware-fusion':
   #   license => 'puppet:///modules/people/joe/licenses/fusion.lic',
@@ -95,12 +96,13 @@ node default {
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
-
   # node versions
   include nodejs::0-4
   include nodejs::0-6
   include nodejs::0-8
-
+#class { 'nodejs::global':
+ #   version => 'v0.10'
+#}
   # default ruby versions
   include ruby::1_8_7
   include ruby::1_9_2
