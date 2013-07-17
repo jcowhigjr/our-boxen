@@ -2,11 +2,12 @@ include people::jcowhigjr::applications
 
 class people::jcowhigjr {
   include homebrew
+  include imagemagick
 
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 
-  include projects::rbes
+  include projects::inspectall_webapp
 
 #  $dotfiles  = "${devfolder}/dotfiles"
 #	file { $devfolder: 

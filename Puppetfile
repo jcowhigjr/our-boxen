@@ -41,4 +41,11 @@ github "java",       "~>1"
 github "postgresql", "~>1"
 github "redis",      "~>1"
 github "sysctl",     "~>1"
-github "openssl",    "~>1"
+github "emacs",      "~>1"
+
+#github "imagemagick", "~>1.2.0"
+#inspectall_webapp  
+github "qt",         "~>1"
+github "imagemagick", "1.0.1", :repo => "shazino/puppet-imagemagick"
+github "freetds",    "~>1"
+github "virtualbox", "~>1"

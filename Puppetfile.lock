@@ -19,6 +19,16 @@ GITHUBTARBALL
     elasticsearch (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-emacs
+  specs:
+    emacs (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-freetds
+  specs:
+    freetds (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (2.0.1)
@@ -64,6 +74,11 @@ GITHUBTARBALL
     postgresql (1.0.4)
 
 GITHUBTARBALL
+  remote: boxen/puppet-qt
+  specs:
+    qt (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-redis
   specs:
     redis (1.0.0)
@@ -89,6 +104,11 @@ GITHUBTARBALL
     sysctl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.4)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
@@ -103,27 +123,36 @@ GITHUBTARBALL
   specs:
     stdlib (4.1.0)
 
+GITHUBTARBALL
+  remote: shazino/puppet-imagemagick
+  specs:
+    imagemagick (1.0.1)
+
 DEPENDENCIES
   autoconf (= 1.0.0)
   boxen (= 2.3.6)
   dnsmasq (= 1.0.0)
   elasticsearch (~> 1.0.1)
+  emacs (~> 1)
+  freetds (~> 1)
   gcc (= 2.0.1)
   git (= 1.2.4)
   homebrew (= 1.2.0)
   hub (= 1.0.0)
+  imagemagick (= 1.0.1)
   inifile (= 0.9.0)
   java (~> 1)
   nginx (= 1.4.2)
   nodejs (= 3.2.7)
   openssl (= 1.0.0)
-  openssl (~> 1)
   postgresql (~> 1)
+  qt (~> 1)
   redis (~> 1)
   repository (= 2.2.0)
   ruby (= 6.1.1)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   sysctl (~> 1)
+  virtualbox (~> 1)
   xquartz (= 1.1.0)
 
