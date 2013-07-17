@@ -58,17 +58,54 @@ node default {
   include hub
   include nginx
 
-  # fail if FDE is not enabled
+
+#JC likes
+  #  include vim
+  include tmux
+  include skype
+  include magican
+  include growl_fork
+  include sublime_text_2
+#  sublime_text_2::package{'Emmet' :source => 'sergeche/emmet-sublime'}
+  include vagrant
+  include postgresql
+  include graphviz
+  include mysql
+  include dropbox
+  include firefox
+  include autojump
+  include zsh
+  include emacs
+  include slate
+  include textmate::textmate2::release  # normal release
+ # include textmate::textmate2::beta     # beta releases
+ # include textmate::textmate2::nightly  # nightly releases
+  include mou
+  include ctags
+  include chrome
+#  include titanium
+  include java
+ # include android
+ # android::platform { 'android-16': }
+  # include vagrant
+  # vagrant::plugin { 'vagrant-vmware-fusion':
+  #   license => 'puppet:///modules/people/joe/licenses/fusion.lic',
+  # }
+  # vagrant::box { 'squeeze64/vmware_fusion':
+  #   source => 'https://s3.amazonaws.com/github-ops/vagrant/squeeze64-6.0.7-vmware_fusion.box'}
+
+
+# fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
-
   # node versions
-  include nodejs::v0_4
-  include nodejs::v0_6
-  include nodejs::v0_8
-  include nodejs::v0_10
-
+  include nodejs::0-4
+  include nodejs::0-6
+  include nodejs::0-8
+#class { 'nodejs::global':
+ #   version => 'v0.10'
+#}
   # default ruby versions
   include ruby::1_8_7
   include ruby::1_9_2
@@ -80,7 +117,10 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'tree',
+      'htop-osx',
+      'elinks'
     ]:
   }
 

@@ -1,0 +1,102 @@
+Script started on Tue Apr  9 15:41:55 2013
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:41:55 [121Dppill  p pkill script
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo pkill]1;repo pkill[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:42:02 [121Dkkill scr     k  ppkill script
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo pkill]1;repo pkill[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:42:11 [121D//sr /  bboxen
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo boxen]1;repo boxenBoxen's master branch is out of sync, won't auto-update!
+[mNotice: /Stage[main]/Pkgconfig/Package[gettext]/ensure: created[0m
+16.811s total, 11.29s user, 3.84s system, 89% cpu
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:42:33 [121Dboxen
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo boxen]1;repo boxenBoxen's master branch is out of sync, won't auto-update!
+[mNotice: /Stage[main]/Pkgconfig/Package[gettext]/ensure: created[0m
+15.464s total, 10.77s user, 3.63s system, 93% cpu
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:42:58 [121Dsscr
+[01;33m-- external command --[0m
+[0mscreen         screencapture  script       
+[01;33m-- local directory --[0m
+[J[1;31mscript[0m/[J[4A[0m[27m[24m[24m[12Cscr[K[89C [01;30m[00m [01;33m± master*:dc691b0[00m 15:42:58 [24m[118Dipt/ci
+[J[J[01;31m-- No Matches Found --[0m[A[0m[27m[24m[24m[12Cscript/ci[K[83C [01;30m[00m [01;33m± master*:dc691b0[00m 15:42:58 [24m[112Du   
+[J[01;33m-- executable file or directory --[0m
+[1;32mbootstrap[0m*             [1;32mboxen-bootstrap[0m*       [1;32mboxen-my-config[0m*       [1;32msync[0m*                                       
+[J[1;32mboxen[0m*                 [J[1;32mboxen-git-credential[0m*  [J[1;32mnuke[0m*                  [J                                          [3A[0m[27m[24m[24m[12Cscript/[K[85C [01;30m[00m [01;33m± master*:dc691b0[00m 15:42:58 [24m[114Dnuke skype
+[J]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script/nuke]1;repo script/nukePassword:
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:43:56 [121Dscript/nuke skype         
+[01;33m-- executable file or directory --[0m
+[1;32mbootstrap[0m*             [1;32mboxen-bootstrap[0m*       [1;32mboxen-my-config[0m*       [1;32msync[0m*                                       
+[J[1;32mboxen[0m*                 [J[1;32mboxen-git-credential[0m*  [J[1;32mnuke[0m*                  [J                                          [3A[0m[27m[24m[24m[12Cscript/[K[85C [01;30m[00m [01;33m± master*:dc691b0[00m 15:43:56 [24m[114Dnukde  e
+[J]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script/nuke]1;repo script/nukePassword:
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:44:08 [121Dscript/nuke skype
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script/nuke]1;repo script/nukePassword:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+sudo: 3 incorrect password attempts
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:44:23 [121Dscript/nuke skype
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script/nuke]1;repo script/nukePassword:
+Remove most traces of Boxen from your machine.
+        --all                        Remove everything possible.
+        --force                      Actually do it.
+        --help                       Show this help.
+        --opt                        Remove /opt/boxen.
+        --services                   Remove and unload services.
+        --receipts                   Remove package receipts used by Puppet.
+        --gitconfig                  Remove Boxen-provided git credential helper config.
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:44:29 [121Dscript/nuke skype     --receipts skyupe   pe
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script/nuke]1;repo script/nukeRemove most traces of Boxen from your machine.
+        --all                        Remove everything possible.
+        --force                      Actually do it.
+        --help                       Show this help.
+        --opt                        Remove /opt/boxen.
+        --services                   Remove and unload services.
+        --receipts                   Remove package receipts used by Puppet.
+        --gitconfig                  Remove Boxen-provided git credential helper config.
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:44:53 [121Dscript/nuke --receipts skype     
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script/nuke]1;repo script/nukeRemove most traces of Boxen from your machine.
+        --all                        Remove everything possible.
+        --force                      Actually do it.
+        --help                       Show this help.
+        --opt                        Remove /opt/boxen.
+        --services                   Remove and unload services.
+        --receipts                   Remove package receipts used by Puppet.
+        --gitconfig                  Remove Boxen-provided git credential helper config.
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:44:56 [121Dscript/nuke --receipts [23D                      [22D111script/nuke --receipts skype--receipts skype [17D--receipts skype [17D--receipts skype [17D--receipts skype [17D--receipts skype [17D--receipts skype [17D --receipts skype[16D
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script]1;repo scriptscript: illegal option -- -
+usage: script [-akq] [-t time] [file [command ...]]
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:45:15 [121Dscript --receipts skype/ --receipts skype[17Dn --receipts skype[17Du --receipts skype[17Dk --receipts skype[17De --receipts skype[17D
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script/nuke]1;repo script/nukeRemove most traces of Boxen from your machine.
+        --all                        Remove everything possible.
+        --force                      Actually do it.
+        --help                       Show this help.
+        --opt                        Remove /opt/boxen.
+        --services                   Remove and unload services.
+        --receipts                   Remove package receipts used by Puppet.
+        --gitconfig                  Remove Boxen-provided git credential helper config.
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:45:28 [121Dscript/nuke --receipts skype     
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script/nuke]1;repo script/nukeRemove most traces of Boxen from your machine.
+        --all                        Remove everything possible.
+        --force                      Actually do it.
+        --help                       Show this help.
+        --opt                        Remove /opt/boxen.
+        --services                   Remove and unload services.
+        --receipts                   Remove package receipts used by Puppet.
+        --gitconfig                  Remove Boxen-provided git credential helper config.
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:45:33 [121Dscript/nuke --receipts --force
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo script/nuke]1;repo script/nukeRemove most traces of Boxen from your machine.
+        --all                        Remove everything possible.
+        --force                      Actually do it.
+        --help                       Show this help.
+        --opt                        Remove /opt/boxen.
+        --services                   Remove and unload services.
+        --receipts                   Remove package receipts used by Puppet.
+        --gitconfig                  Remove Boxen-provided git credential helper config.
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:45:37 [121Dscript/nuke --receipts --force[1C[1m [0m --receipts --force[19D[0m --receipts --force [20D[11D                              [30Dbbash
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo bash]1;repo bashbash-3.2$ boxen
+Boxen's master branch is out of sync, won't auto-update!
+[mNotice: /Stage[main]/Pkgconfig/Package[gettext]/ensure: created[0m
+bash-3.2$ exut[K[Kit
+exit
+22.289s total, 11.14s user, 3.78s system, 66% cpu
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[J[01;32m/o/b/[4mrepo[24m[00m[33m[00m [36m»[00m [K[92C [01;30m[00m [01;33m± master*:dc691b0[00m 15:46:12 [121Deexut  it
+]2;jcowhigjr@Johns-MacBook-Pro.local: /opt/boxen/repo exit]1;repo exit
+Script done on Tue Apr  9 15:46:14 2013
