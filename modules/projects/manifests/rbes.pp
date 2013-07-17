@@ -1,6 +1,6 @@
 class projects::rbes {
-  include icu4c
-  include phantomjs
+  #include icu4c
+  #include phantomjs
 
   boxen::project { 'rbes':
     dotenv        => true,
