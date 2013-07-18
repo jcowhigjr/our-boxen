@@ -13,6 +13,13 @@ class people::jcowhigjr {
 
   include projects::inspectall_webapp
 
+  # other useful packages
+  package {
+    [
+      'htop'
+    ]:
+  }
+
 #  $dotfiles  = "${devfolder}/dotfiles"
 #	file { $devfolder: 
 #  	ensure => "directory"
