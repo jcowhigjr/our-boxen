@@ -36,6 +36,7 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
 github "elasticsearch", "~>1.0.1"
 github "java",       "~>1"
 github "postgresql", "~>1"
@@ -49,3 +50,8 @@ github "qt",         "~>1"
 github "imagemagick", "1.0.1", :repo => "shazino/puppet-imagemagick"
 github "freetds",    "~>1"
 github "virtualbox", "~>1"
+
+#jcowhigjr.puppetlabs
+github "iterm2",    "~>1"
+github "zsh",       "~>1"
+#github "osx",       "~>1"
