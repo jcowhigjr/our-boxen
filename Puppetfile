@@ -50,6 +50,7 @@ github "qt",         "~>1"
 github "imagemagick", "1.0.1", :repo => "shazino/puppet-imagemagick"
 github "freetds",    "~>1"
 github "virtualbox", "~>1"
+github "phantomjs", "~>2"
 
 #jcowhigjr.puppetlabs
 github "iterm2",    "~>1"
