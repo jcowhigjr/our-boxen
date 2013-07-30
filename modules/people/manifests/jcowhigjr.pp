@@ -7,7 +7,13 @@ class people::jcowhigjr {
   include zsh
   include emacs
   #include osx::software_update
-
+  include phantomjs
+  include clipmenu
+  phantomjs::version { '1.9.0': }
+  include phantomjs::1_9_0
+#  phantomjs::local { :
+#                   version => '1.9.0'
+#}                  
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 

@@ -9,6 +9,11 @@ GITHUBTARBALL
     boxen (2.3.6)
 
 GITHUBTARBALL
+  remote: boxen/puppet-clipmenu
+  specs:
+    clipmenu (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
@@ -146,6 +151,7 @@ GITHUBTARBALL
 DEPENDENCIES
   autoconf (= 1.0.0)
   boxen (= 2.3.6)
+  clipmenu (~> 1)
   dnsmasq (= 1.0.0)
   elasticsearch (~> 1.0.1)
   emacs (~> 1)
