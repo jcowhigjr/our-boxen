@@ -5,10 +5,8 @@ class projects::inspectall_webapp {
   include qt
   include freetds
   include virtualbox
-  include phantomjs
-
-         phantomjs::version { '1.9.0': }
-          include phantomjs::1_9_0
+#  phantomjs::version { '1.9.0': }
+#  include phantomjs::1_9_0
 
 
 #          phantomjs::local { '/path/to/whatever':
