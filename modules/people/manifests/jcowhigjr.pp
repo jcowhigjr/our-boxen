@@ -17,7 +17,8 @@ class people::jcowhigjr {
   # other useful packages
   package {
     [
-      'htop'
+      'htop',
+      'tree'
     ]:
   }
 

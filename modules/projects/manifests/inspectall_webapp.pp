@@ -5,6 +5,7 @@ class projects::inspectall_webapp {
   include qt
   include freetds
   include virtualbox
+  include phantomjs
   include phantomjs::1_9_0
 
 
