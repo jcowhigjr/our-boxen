@@ -18,7 +18,8 @@ class people::jcowhigjr {
   package {
     [
       'htop',
-      'tree'
+      'tree',
+      'wget'
     ]:
   }
 
