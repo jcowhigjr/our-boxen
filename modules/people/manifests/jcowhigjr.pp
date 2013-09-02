@@ -8,6 +8,7 @@ class people::jcowhigjr {
   include emacs
   #include osx::software_update
   include clipmenu
+  include ctags
 
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
