@@ -9,7 +9,7 @@ class people::jcowhigjr {
   #include osx::software_update
   include clipmenu
   include ctags
-
+  include virtualbox
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 

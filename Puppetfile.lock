@@ -183,6 +183,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   sysctl (~> 1)
   virtualbox (~> 1)
+  virtualbox (~> 1)
   xquartz (= 1.1.0)
   zsh (~> 1)
 

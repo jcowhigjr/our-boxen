@@ -76,6 +76,15 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
+  # Set the global default ruby (auto-installs it if it can)
+  # ensure a gem is installed for a certain ruby version
+  # note, you can't have duplicate resource names so you have to name like so
+  ruby::gem { "bundler for ${version}":
+    gem     => 'bundler',
+    ruby    => $version,
+    version => '~> 1.3'
+  }
+
   # common, useful packages
   package {
     [
