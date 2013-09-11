@@ -10,6 +10,7 @@ class people::jcowhigjr {
   include clipmenu
   include ctags
   include virtualbox
+  include vagrant
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 
