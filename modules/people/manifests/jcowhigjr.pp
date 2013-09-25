@@ -3,6 +3,7 @@ include people::jcowhigjr::applications
 class people::jcowhigjr {
   include homebrew
   include imagemagick
+  include graphviz
   include iterm2::stable
   include zsh
   include emacs
