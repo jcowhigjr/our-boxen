@@ -44,6 +44,11 @@ GITHUBTARBALL
     git (1.2.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-graphviz
+  specs:
+    graphviz (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.2.1)
@@ -163,6 +168,7 @@ DEPENDENCIES
   freetds (~> 1)
   gcc (= 2.0.1)
   git (= 1.2.5)
+  graphviz (~> 1)
   homebrew (= 1.2.1)
   hub (= 1.0.0)
   imagemagick (~> 1.2)
