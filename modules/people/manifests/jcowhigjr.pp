@@ -11,22 +11,25 @@ class people::jcowhigjr {
   include ctags
   include virtualbox
   include vagrant
+  include java
+  include vagrant
+
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 
-  include projects::inspectall_webapp
+#  include projects::inspectall_webapp
 
   # other useful packages
   package {
     [
       'htop',
       'tree',
-      'wget'
+      'wget',
     ]:
   }
 
 #  $dotfiles  = "${devfolder}/dotfiles"
-#	file { $devfolder: 
+#	file { $devfolder:
 #  	ensure => "directory"
 #	}
 #  repository { $dotfiles:
