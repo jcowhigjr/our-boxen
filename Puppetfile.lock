@@ -44,6 +44,11 @@ GITHUBTARBALL
     git (1.2.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-graphviz
+  specs:
+    graphviz (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.2.1)
@@ -51,7 +56,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.0.0)
+    hub (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
@@ -62,6 +67,11 @@ GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
     java (1.1.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-mongodb
+  specs:
+    mongodb (1.0.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -107,6 +117,11 @@ GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
     ruby (6.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-screenhero
+  specs:
+    screenhero (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -163,14 +178,16 @@ DEPENDENCIES
   freetds (~> 1)
   gcc (= 2.0.1)
   git (= 1.2.5)
+  graphviz (~> 1.0)
   homebrew (= 1.2.1)
-  hub (= 1.0.0)
+  hub (~> 1.0.3)
   imagemagick (~> 1)
   inifile (= 1.0.0)
   iterm2 (~> 1)
   java (~> 1.1)
+  mongodb (~> 1)
   nginx (= 1.4.2)
-  nodejs (= 3.2.8)
+  nodejs (~> 3.2.8)
   openssl (= 1.0.0)
   phantomjs (~> 2)
   postgresql (~> 1)
@@ -178,6 +195,7 @@ DEPENDENCIES
   redis (~> 1)
   repository (= 2.2.0)
   ruby (= 6.2.0)
+  screenhero (~> 1.0)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   sysctl (~> 1)

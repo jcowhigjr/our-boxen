@@ -14,11 +14,26 @@ class people::jcowhigjr {
   include vagrant
   include java
   include vagrant
+  include hub
+  include screenhero
 
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 
 #  include projects::inspectall_webapp
+# install any arbitrary nodejs version
+#nodejs
+nodejs { '>=v0.10.1': }
+
+
+#mongodb
+# https://github.com/boxen/puppet-mongodb
+include mongodb
+
+# install some npm modules
+nodejs::module { 'bower':
+  node_version => '~v0.10'
+}
 
   # other useful packages
   package {
@@ -28,6 +43,18 @@ class people::jcowhigjr {
       'wget',
     ]:
   }
+
+
+  # ensure a gem is installed for a certain ruby version
+  # note, you can't have duplicate resource names so you have to name like so
+  #$version = "1.9.3"
+  # $version = "~> 1.9.3p231-tcs-github"
+
+  # ruby::gem { "bundler for ${version}":
+  #   gem     => 'hub',
+  #   ruby    => $version,
+  #   version => '~> 1.10'
+  # }
 
 #  $dotfiles  = "${devfolder}/dotfiles"
 #	file { $devfolder:
