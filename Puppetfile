@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "2.3.6"
+github "boxen", "~>2.3.6"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -29,7 +29,7 @@ github "nginx",      "1.4.2"
 github "nodejs",     "~>3.2.8"
 github "openssl",    "1.0.0"
 github "repository", "2.2.0"
-github "ruby",       "6.2.0"
+github "ruby",       "~>6.2.0"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
@@ -38,13 +38,19 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 
 #github "elasticsearch", "~>1.0.3"
-github "java",       "~>1.1"
-github "postgresql", "~>1"
+github "java",       "~>1"
+github "postgresql", "~>2"
 github "redis",      "~>1"
 github "sysctl",     "~>1"
 github "emacs",      "~>1"
 github "mongodb",    "~>1"
-
+github "pkgconfig",  "~>1"
+github "swig",       "~>1"
+github "pcre",       "~>1"
+github "cyberduck",  "~>1"
+github "irssi",       "~>1"
+github "heroku",      "~>2"
+github "wkhtmltopdf", "~>1"
 #inspectall_webapp
 github "qt",         "~>1"
 github "imagemagick", "~>1", :repo => "shazino/puppet-imagemagick"
@@ -52,6 +58,8 @@ github "graphviz", "~>1.0"
 github "freetds",    "~>1"
 github "virtualbox", "~>1.0.5"
 github "phantomjs", "~>2"
+github "xz", "~>1"
+github "rdio", "~>1"
 #github "repository", "~>2"
 
 #jcowhigjr.puppetlabs
@@ -62,6 +70,14 @@ github "clipmenu", "~>1"
 github "ctags", "~>1"
 github "vagrant", "~>2.0.11"
 github "screenhero", "~>1.0"
+github "android", "~>1"
+github "daisy_disk", "~>1"
+github "rubymine", "~>1"
+github "dashlane", "~>1"
+github "mumble", "~>1"
+github "btsync", "~>1"
+github "riak", "~>1"
+github "cassandra", "~>1"
 
 # mod "property_list_key",  "0.1.0",   :github_tarball => "glarizza/puppet-property_list_key"
 #   # Disable Gatekeeper so you can install any package you want

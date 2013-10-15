@@ -16,6 +16,19 @@ class people::jcowhigjr {
   include vagrant
   include hub
   include screenhero
+  include android::ndk
+  include android::sdk
+  include android::studio
+  include btsync
+  include swig
+  include pcre
+  include cyberduck
+  include irssi
+  include xz
+  include heroku
+  include wkhtmltopdf
+  include rdio
+  include postgresql
 
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
@@ -23,7 +36,7 @@ class people::jcowhigjr {
 #  include projects::inspectall_webapp
 # install any arbitrary nodejs version
 #nodejs
-nodejs { '>=v0.10.1': }
+# nodejs { 'v0.10.1': }
 
 
 #mongodb
@@ -32,7 +45,7 @@ include mongodb
 
 # install some npm modules
 nodejs::module { 'bower':
-  node_version => '~v0.10'
+  node_version => 'v0_10'
 }
 
   # other useful packages
@@ -41,6 +54,7 @@ nodejs::module { 'bower':
       'htop',
       'tree',
       'wget',
+      'elinks',
     ]:
   }
 
