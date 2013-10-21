@@ -18,7 +18,7 @@ class people::jcowhigjr {
   include screenhero
   include android::ndk
   include android::sdk
-  include android::studio
+  #include android::studio
   include btsync
   include swig
   include pcre
@@ -29,13 +29,18 @@ class people::jcowhigjr {
   include wkhtmltopdf
   include rdio
   include postgresql
+  #testing
+  include daisy_disk
+  include rubymine
+  include dashlane
+  include mumble
 
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 
 #  include projects::inspectall_webapp
 # install any arbitrary nodejs version
-#nodejs
+# nodejs
 # nodejs { 'v0.10.1': }
 
 
@@ -44,9 +49,9 @@ class people::jcowhigjr {
 include mongodb
 
 # install some npm modules
-nodejs::module { 'bower':
-  node_version => 'v0_10'
-}
+#nodejs::module { 'bower':
+#  node_version => 'v0_10'
+#}
 
   # other useful packages
   package {

@@ -70,14 +70,7 @@ node default {
   include nodejs::v0_8
   include nodejs::v0_10
 
-  #testing
-  include android::ndk
-  include android::sdk
-  include android::studio
-  include daisy_disk
-  include rubymine
-  include dashlane
-  include mumble
+
   include riak
   include cassandra
   include pkgconfig
