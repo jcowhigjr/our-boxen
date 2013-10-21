@@ -11,9 +11,8 @@ class people::jcowhigjr {
   include clipmenu
   include ctags
   include virtualbox
-  include vagrant
   include java
-  include vagrant
+ # include vagrant
   include hub
   include screenhero
   include android::ndk
