@@ -12,7 +12,14 @@ class people::jcowhigjr {
   include ctags
   include virtualbox
   include java
- # include vagrant
+  include vagrant
+  # vagrant::plugin { 'vagrant-vmware-fusion':
+    # license => 'puppet:///Users/jcowhigjr/.vagrant.d/license-vagrant-vmware-fusion.lic',
+  # }
+
+  # vagrant::box { 'squeeze64/vmware_fusion':
+    # source => 'https://s3.amazonaws.com/github-ops/vagrant/squeeze64-6.0.7-vmware_fusion.box'
+  # }
   include hub
   include screenhero
   include android::ndk

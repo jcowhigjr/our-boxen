@@ -209,11 +209,6 @@ GITHUBTARBALL
     sysctl (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-vagrant
-  specs:
-    vagrant (2.0.11)
-
-GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
     virtualbox (1.0.5)
@@ -252,6 +247,11 @@ GITHUBTARBALL
   remote: shazino/puppet-imagemagick
   specs:
     imagemagick (1.0.1)
+
+GITHUBTARBALL
+  remote: weyert/puppet-vagrant
+  specs:
+    vagrant (2.0.9)
 
 DEPENDENCIES
   android (~> 1)
