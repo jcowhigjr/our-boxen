@@ -40,7 +40,7 @@ class people::jcowhigjr {
   include rubymine
   include dashlane
   include mumble
-
+  include meteorjs
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 

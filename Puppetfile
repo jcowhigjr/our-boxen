@@ -78,6 +78,7 @@ github "mumble", "~>1"
 github "btsync", "~>1"
 github "riak", "~>1"
 github "cassandra", "~>1"
+github "meteorjs", "~1", :repo => "newtriks/puppet-meteorjs"
 
 # mod "property_list_key",  "0.1.0",   :github_tarball => "glarizza/puppet-property_list_key"
 #   # Disable Gatekeeper so you can install any package you want
