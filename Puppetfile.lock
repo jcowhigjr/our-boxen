@@ -234,6 +234,11 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: newtriks/puppet-meteorjs
+  specs:
+    meteorjs (1.0.5)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.0)
@@ -278,6 +283,7 @@ DEPENDENCIES
   irssi (~> 1)
   iterm2 (~> 1)
   java (~> 1)
+  meteorjs (~> 1)
   mongodb (~> 1)
   mumble (~> 1)
   nginx (= 1.4.2)
