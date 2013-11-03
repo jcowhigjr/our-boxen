@@ -119,6 +119,11 @@ GITHUBTARBALL
     mumble (1.0.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.1.5)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.2)
@@ -286,6 +291,7 @@ DEPENDENCIES
   meteorjs (~> 1)
   mongodb (~> 1)
   mumble (~> 1)
+  mysql (~> 1)
   nginx (= 1.4.2)
   nodejs (~> 3.2)
   openssl (= 1.0.0)

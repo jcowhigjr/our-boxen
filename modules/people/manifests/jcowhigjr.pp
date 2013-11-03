@@ -24,6 +24,7 @@ class people::jcowhigjr {
   include screenhero
   include android::ndk
   include android::sdk
+  include android::platform_tools
   #include android::studio
   include btsync
   include swig
@@ -41,6 +42,9 @@ class people::jcowhigjr {
   include dashlane
   include mumble
   include meteorjs
+  include mysql
+
+
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
 
