@@ -2,7 +2,6 @@ require boxen::environment
 require homebrew
 require gcc
 
-
 Exec {
   group       => 'staff',
   logoutput   => on_failure,
@@ -59,34 +58,22 @@ node default {
   include hub
   include nginx
 
-# fail if FDE is not enabled
+  # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
 
   # node versions
-  #include nodejs::v0_4
-  #include nodejs::v0_6
+  include nodejs::v0_4
+  include nodejs::v0_6
   include nodejs::v0_8
   include nodejs::v0_10
 
-
-  include riak
-  include cassandra
-  include pkgconfig
   # default ruby versions
   include ruby::1_8_7
   include ruby::1_9_2
   include ruby::1_9_3
   include ruby::2_0_0
-  # Set the global default ruby (auto-installs it if it can)
-  # ensure a gem is installed for a certain ruby versionruby
-  # note, you can't have duplicate resource names so you have to name like so
-  ruby::gem { "bundler for ${version}":
-    gem     => 'bundler',
-    ruby    => $version,
-    version => '~> 1.3'
-  }
 
   # common, useful packages
   package {
@@ -102,4 +89,3 @@ node default {
     target => $boxen::config::repodir
   }
 }
-

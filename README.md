@@ -22,6 +22,7 @@ and detect most of these and tell you anyway):
 
 * Boxen __requires__ at least the Xcode Command Line Tools installed.
 * Boxen __will not__ work with an existing rvm install.
+* Boxen __may not__ play nice with a GitHub username that includes dash(-)
 * Boxen __may not__ play nice with an existing rbenv install.
 * Boxen __may not__ play nice with an existing chruby install.
 * Boxen __may not__ play nice with an existing homebrew install.
@@ -270,12 +271,3 @@ you will need to set the `BOXEN_GITHUB_ENTERPRISE_URL` and
 See [FAQ](https://github.com/boxen/our-boxen/blob/master/docs/faq.md).
 
 Use Issues or #boxen on irc.freenode.net.
-
-
-***
-my notes
-I had to run /opt/boxen/nvm/install.sh on the command line for nvm to show in the PATH
-
- Q: How do you uninstall an application and get it to reinstall in the application folder with boxen?
-
-When removing applications make sure to remove the corresponding /var/db/.puppet_appdmg_installed_application so that boxen will reinstall it.
