@@ -146,7 +146,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-rubymine
   specs:
-    rubymine (1.0.3)
+    rubymine (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-screenhero
@@ -230,7 +230,7 @@ DEPENDENCIES
   redis (~> 1)
   repository (= 2.2.0)
   ruby (= 6.7.2)
-  rubymine (~> 1)
+  rubymine (~> 1.1)
   screenhero (~> 1.0)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
