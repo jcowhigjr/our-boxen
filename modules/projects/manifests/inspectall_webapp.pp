@@ -1,6 +1,6 @@
 class projects::inspectall_webapp {
   #include icu4c
-  
+
   include imagemagick
   include qt
   include freetds

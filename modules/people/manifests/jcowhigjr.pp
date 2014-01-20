@@ -8,11 +8,6 @@ class people::jcowhigjr {
   # include nginx
   # include homebrew
 
-  #os x
-  #include osx::software_update
-  include clipmenu
-  include screenhero
-
   #basic
   include java
 
@@ -29,7 +24,6 @@ class people::jcowhigjr {
   include android::sdk
   include android::platform_tools
   include meteorjs
-
 
   # include imagemagick
   # include graphviz
@@ -52,35 +46,15 @@ class people::jcowhigjr {
   # }
 #  include hub
 
-
-  #include android::studio
-
-#  include swig
-#  include pcre
-#  include cyberduck
-#  include irssi
-#  include xz
-#  include wkhtmltopdf
-
-  # OS X applications
-  include rdio
-  include btsync
-  # include daisy_disk
-  # include dashlane
-  # include mumble
-  include rubymine
-
-
   $home      = "/Users/${::luser}"
   $devfolder = "${home}/my"
+
+  include projects::isdms-web-ror
 
 #  include projects::inspectall_webapp
 # install any arbitrary nodejs version
 # nodejs
 # nodejs { 'v0.10.1': }
-
-
-
 
 # install some npm modules
 #nodejs::module { 'bower':
@@ -93,9 +67,31 @@ class people::jcowhigjr {
       'htop',
       'tree',
       'wget',
-      'elinks',
+#      'elinks',
+#      'rbenv',
+#      'direnv',
     ]:
   }
+
+  # Installs Phantomenv for PhantomJS version management
+  include phantomjs
+
+  # Install PhantomJS version 1.9.0
+ # phantomjs::version { '1.9.2': }
+
+  # Set the global version of PhantomJS (version should be installed already)
+ # phantomjs::global { '1.9.2': }
+
+  # The two commands above in one line
+  # include phantomjs::1_9_2
+
+# Sets local version of PhantomJS, writes .phantomenv file to directory specified (version should be installed already)
+#  phantomjs::local { '/path/to/whatever':
+#    version => '1.9.'
+#  }
+
+  # Set the global version of PhantomJS (version should be installed already)
+ # phantomjs::local { '1.9.2': }
 
 
   # ensure a gem is installed for a certain ruby version
