@@ -13,7 +13,7 @@ class people::jcowhigjr {
 
   #devops
   include postgresql
-  #include mysql
+  include mysql
   include mongodb
   include vagrant
   include virtualbox
@@ -32,10 +32,10 @@ class people::jcowhigjr {
   include iterm2::stable
   include zsh
   include emacs
-
+  include pow
  # misc
- # include ctags
-
+  include ctags
+  include osxfuse
 
   # vagrant::plugin { 'vagrant-vmware-fusion':
     # license => 'puppet:///Users/jcowhigjr/.vagrant.d/license-vagrant-vmware-fusion.lic',

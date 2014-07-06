@@ -53,3 +53,23 @@ https://github.com/carsomyr/rbenv-bundler
 
 sudo rm /private/var/db/.puppet_pkgdmg_installed_VirtualBox
 bundle exec librarian-puppet install --clean --verbose
+
+
+http://mason.hateblo.jp/entry/2013/12/31/Boxen_%E3%82%92%E4%B9%85%E3%81%97%E3%81%B6%E3%82%8A%E3%81%AB%E5%8B%95%E3%81%8B%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F
+
+
+Warning: /Stage[main]/Projects::Isdms-web-ror/Boxen::Project[isdms-web-ror]/Ruby::Local[/Users/jcowhigjr/src/isdms-web-ror]/File[/Users/jcowhigjr/src/isdms-web-ror/.rbenv-version]: Skipping because of failed dependencies
+Notice: /Stage[main]/Ruby::1_9_2/File[/opt/boxen/rbenv/versions/1.9.2]: Dependency Repository[/opt/boxen/rbenv] has failures: true
+
+~/s/s/isdms-web-ror » cd /opt/boxen/rbenv
+/o/b/rbenv » git status                                      ± master:14bc162 15:28:54
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+default-gems
+rbenv.d/
+nothing added to commit but untracked files present (use "git add" to track)
+/o/b/rbenv » git clean -df                                   ± master:14bc162 15:28:56
+Removing default-gems
+Removing rbenv.d/##

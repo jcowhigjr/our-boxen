@@ -45,7 +45,7 @@ github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.2"
 github "nodejs",     "3.3.0"
 github "openssl",    "1.0.0"
-github "phantomjs",  "~>2.1" #debugging for rspec error
+#github "phantomjs",  ">=2.2",  :repo => "seanknox/puppet-phantomjs"   #debugging for rspec error
 github "pkgconfig",  "1.0.0"
 github "repository", "2.2.0"
 github "ruby",       "6.7.2"
@@ -89,7 +89,7 @@ github "zsh",         "~>1"
 github "osx",         "~>1" #needed for zsh
 github "thunderbird", "~>1"
 github "clipmenu",    "~>1"
-# github "ctags",     "~>1"
+github "ctags",     "~>1"
 github "vagrant",     "~>3"  #, :repo => "weyert/puppet-vagrant"
 github "screenhero",  "~>1"
 github "android",     "~>1"
@@ -101,9 +101,11 @@ github "btsync", "~>1"
 # github "riak", "~>1"
 github "cassandra", "~>1"
 github "meteorjs", "~>1", :repo => "newtriks/puppet-meteorjs"
-# github "mysql", "~>1"
+github "mysql"
 
-
+github "toggl", "~>1"
+github "pow", "~>2"
+github "osxfuse", "~>1"
 
 # mod "property_list_key",  "0.1.0",   :github_tarball => "glarizza/puppet-property_list_key"
 #   # Disable Gatekeeper so you can install any package you want

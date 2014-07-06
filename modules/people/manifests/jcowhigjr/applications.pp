@@ -10,7 +10,7 @@ class people::jcowhigjr::applications {
   # include mumble
   include rubymine
   include thunderbird
-
+  include toggl
 
     #include android::studio
 

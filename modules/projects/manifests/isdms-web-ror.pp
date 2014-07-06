@@ -23,21 +23,21 @@ class projects::isdms-web-ror {
     ruby::gem { "bundler for ${version}":
       gem     => 'bundler',
       ruby    => $ruby_version,
-      version => '~> 1.5.2'
+      version => '>= 1.5.2'
     }
     # Installs Phantomenv for PhantomJS version management
-    include phantomjs
+#    include phantomjs
 
     # Install PhantomJS version 1.9.2
-    phantomjs::version { '1.9.2': }
+#    phantomjs::version { '1.9.0': }
 
     # The two commands above in one line but doesn't appear to work
-    #include phantomjs::1_9_2
+    include phantomjs::1_9_2
 
     # Sets local version of PhantomJS, writes .phantomenv file to directory specified (version should be installed already)
- #   phantomjs::local { '/path/to/whatever':
- #     version => '1.9.0'
- #   }
+ #    phantomjs::local { '/Users/jcowhigjr/src/isdms-web-ror':
+ #     version => '1.9.2'
+ #    }
 
 
 
