@@ -26,12 +26,7 @@ set -e
 CLT_VERSION=`pkgutil --pkg-info=com.apple.pkg.CLTools_Executables | grep version | cut -f 2 -d ' ' | awk ' { print $1; } '`
 
 # Bundle install unless we're already up to date.
-<<<<<<< HEAD
-/usr/bin/bundle install --binstubs bin --path .bundle --quiet "$@"
 
-# Fix the binstubs to use system ruby
-find bin -type f -print0 | xargs -0 sed -i '' 's|/usr/bin/env ruby|/usr/bin/ruby|g'
-=======
 if [[ $CLT_VERSION =~ ^5\.1\.0\.0\.1\.1396320587 ]]; then
   # Fix for LLVM that ships with Xcode 5.1
   ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future /usr/bin/bundle install --binstubs bin --path .bundle --quiet "$@"
@@ -42,4 +37,3 @@ fi
 
 # Fix the binstubs to use system ruby
 find bin -not -path 'bin/\.*' -type f -print0 | xargs -0 /usr/bin/sed -i '' 's|/usr/bin/env ruby|/usr/bin/ruby|g'
->>>>>>> upstream/master
