@@ -18,6 +18,12 @@ class people::jcowhigjr {
   include vagrant
   include virtualbox
   include heroku
+  include docker
+
+package { 'Boot2Docker':
+  provider => 'pkgdmg',
+  source   => 'https://github.com/boot2docker/osx-installer/releases/download/v1.0.0/Boot2Docker-1.0.0.pkg',
+}
 
   #mobile
   include android::ndk

@@ -219,6 +219,11 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: morgante/puppet-docker
+  specs:
+    docker (1.0.3)
+
+GITHUBTARBALL
   remote: newtriks/puppet-meteorjs
   specs:
     meteorjs (1.0.5)
@@ -247,6 +252,7 @@ DEPENDENCIES
   ctags (~> 1)
   dashlane (~> 1)
   dnsmasq (= 1.0.1)
+  docker (~> 1)
   emacs (~> 1)
   foreman (= 1.2.0)
   gcc (= 2.1.1)
