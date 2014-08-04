@@ -81,10 +81,6 @@ cd /opt/boxen/repo
 ./script/boxen
 ```
 
-You can also skip the above steps and <a href="#customizing">customize your
-boxen</a> before installing it.
-
-
 ### Distributing
 
 That's enough to get your boxen into a usable state on other machines,
@@ -138,10 +134,15 @@ This template project provides the following by default:
 * Node.js 0.6
 * Node.js 0.8
 * Node.js 0.10
+<<<<<<< HEAD
 * Ruby 1.8.7
 * Ruby 1.9.2
+=======
+>>>>>>> upstream/master
 * Ruby 1.9.3
 * Ruby 2.0.0
+* Ruby 2.1.0
+* Ruby 2.1.1
 * ack
 * Findutils
 * GNU tar
@@ -197,6 +198,32 @@ Now Puppet knows where to download the module from when you include it in your s
     # github "java",     "1.1.0"
     include java
 
+### Hiera
+
+Hiera is preferred mechanism to make changes to module defaults (e.g. default
+global ruby version, service ports, etc). This repository supplies a
+starting point for your Hiera configuration at `config/hiera.yml`, and an
+example data file at `hiera/common.yaml`. See those files for more details.
+
+The default `config/hiera.yml` is configured with a hierarchy that allows
+individuals to have their own hiera data file in
+`hiera/users/{github_login}.yaml` which augments and overrides
+site-wide values in `hiera/common.yaml`. This default is, as with most of the
+configuration in the example repo, a great starting point for many
+organisations, but is totally up to you. You might want to, for
+example, have a set of values that can't be overridden by adding a file to
+the top of the hierarchy, or to have values set on specific OS
+versions:
+
+```yaml
+# ...
+:hierarchy:
+  - "global-overrides.yaml"
+  - "users/%{::github_login}"
+  - "osx-%{::macosx_productversion_major}"
+  - common
+```
+
 ### Node definitions
 
 Puppet has the concept of a
@@ -238,7 +265,7 @@ everyone by default. An example of this might look like so:
 
    include projects::super-top-secret-project
  }
- ```
+```
 
  If you'd like to read more about how Puppet works, we recommend
  checking out [the official documentation](http://docs.puppetlabs.com/)
@@ -278,6 +305,9 @@ we'll fork it under the Boxen org and give you read+write access to our
 fork.
 You'll still be the maintainer, you'll still own the issues and PRs.
 It'll just be listed under the boxen org so folks can find it more easily.
+
+##upgrading boxen
+See [FAQ-Upgrading](https://github.com/boxen/our-boxen/blob/master/docs/faq.md#q-how-do-you-upgrade-your-boxen-from-the-public-our-boxen).
 
 ## Integrating with Github Enterprise
 
