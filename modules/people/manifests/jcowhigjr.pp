@@ -113,4 +113,7 @@ class people::jcowhigjr {
 #    source  => 'jcowhigjr/dotfiles',
 #    require => File[$devfolder]
 #  }
+   
+   include python
+
 }

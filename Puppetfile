@@ -110,7 +110,7 @@ github "mysql"
 github "toggl", "~>1"
 github "pow", "~>2"
 github "osxfuse", "~>1"
-
+github "python"
 # mod "property_list_key",  "0.1.0",   :github_tarball => "glarizza/puppet-property_list_key"
 #   # Disable Gatekeeper so you can install any package you want
 #   property_list_key { 'Disable Gatekeeper':
