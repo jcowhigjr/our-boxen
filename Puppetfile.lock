@@ -1,17 +1,47 @@
 GITHUBTARBALL
+  remote: boxen/puppet-android
+  specs:
+    android (1.3.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.11.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-brewcask
+  remote: boxen/puppet-btsync
   specs:
-    brewcask (0.0.6)
+    btsync (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-cassandra
+  specs:
+    cassandra (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-clipmenu
+  specs:
+    clipmenu (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-ctags
+  specs:
+    ctags (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dashlane
+  specs:
+    dashlane (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-emacs
+  specs:
+    emacs (1.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -34,6 +64,11 @@ GITHUBTARBALL
     go (2.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-heroku
+  specs:
+    heroku (2.1.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.13.0)
@@ -42,6 +77,26 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.4.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.1.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.6.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-mongodb
+  specs:
+    mongodb (1.3.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.99.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -59,6 +114,16 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (1.6.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osxfuse
+  specs:
+    osxfuse (1.3.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (3.0.0)
@@ -67,6 +132,31 @@ GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-postgresql
+  specs:
+    postgresql (2.2.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-pow
+  specs:
+    pow (2.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-python
+  specs:
+    python (1.3.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-rdio
+  specs:
+    rdio (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-redis
+  specs:
+    redis (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -79,14 +169,64 @@ GITHUBTARBALL
     ruby (8.5.3)
 
 GITHUBTARBALL
+  remote: boxen/puppet-rubymine
+  specs:
+    rubymine (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-screenhero
+  specs:
+    screenhero (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sysctl
+  specs:
+    sysctl (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-thunderbird
+  specs:
+    thunderbird (1.4.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-toggl
+  specs:
+    toggl (1.0.5)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.1.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.9)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
+
+GITHUBTARBALL
+  remote: morgante/puppet-docker
+  specs:
+    docker (1.0.3)
+
+GITHUBTARBALL
+  remote: newtriks/puppet-meteorjs
+  specs:
+    meteorjs (1.0.5)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -104,25 +244,53 @@ GITHUBTARBALL
     module_data (0.0.4)
 
 DEPENDENCIES
-  boxen (= 3.11.0)
-  brewcask (= 0.0.6)
-  dnsmasq (= 2.0.1)
+  android (~> 1)
+  boxen (= 3.6.2)
+  btsync (~> 1)
+  cassandra (~> 1)
+  clipmenu (~> 1)
+  ctags (~> 1)
+  dashlane (~> 1)
+  dnsmasq (= 1.0.1)
+  docker (~> 1)
+  emacs (~> 1)
   foreman (= 1.2.0)
-  gcc (= 3.0.2)
-  git (= 2.7.92)
-  go (= 2.1.0)
-  homebrew (= 1.13.0)
-  hub (= 1.4.1)
-  inifile (= 1.4.1)
-  module_data (= 0.0.4)
-  nginx (= 1.6.0)
-  nodejs (= 5.0.0)
+  gcc (= 2.1.1)
+  git (= 2.5.0)
+  go (= 1.1.0)
+  heroku (~> 2)
+  homebrew (= 1.9.4)
+  hub (= 1.3.0)
+  inifile (= 1.0.3)
+  iterm2 (~> 1)
+  java (~> 1)
+  meteorjs (~> 1)
+  module_data (= 0.0.3)
+  mongodb (~> 1)
+  mysql (>= 0)
+  nginx (= 1.4.3)
+  nodejs (= 3.8.1)
   openssl (= 1.0.0)
-  phantomjs (= 3.0.0)
+  osx (~> 1)
+  osxfuse (~> 1)
+  phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
-  repository (= 2.4.1)
-  ruby (= 8.5.3)
-  stdlib (= 4.7.0)
+  postgresql (~> 2)
+  pow (~> 2)
+  python (>= 0)
+  rdio (~> 1)
+  redis (~> 1)
+  repository (= 2.3.0)
+  ruby (= 8.1.2)
+  rubymine (~> 1.1)
+  screenhero (~> 1)
+  stdlib (= 4.2.1)
   sudo (= 1.0.0)
-  xquartz (= 1.2.1)
+  sysctl (~> 1)
+  thunderbird (~> 1)
+  toggl (~> 1)
+  vagrant (~> 3)
+  virtualbox (~> 1.0)
+  xquartz (= 1.1.1)
+  zsh (~> 1)
 
