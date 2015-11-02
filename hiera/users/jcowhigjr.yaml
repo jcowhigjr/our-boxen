@@ -1,0 +1,30 @@
+#This file contains all of the settings for my computer
+---
+# Cask Search: http://caskroom.io/search
+# Apple ID Search: https://github.com/xdissent/puppet-appstore
+
+#appstore::appleid: "XXX"
+#appstore::password: "XXX"
+#appstore::store: "us"
+##appstore::apps:
+#  "iStat Mini":
+#    source: 'istat-mini/id927292435'
+# Boxen Modules
+apps:
+  - tmux
+  - wget 
+  - htop
+# Homebrew Apps
+homebrew::packages:
+#  - "reattach-to-user-namespace"
+# Boxen Modules
+apps:
+  - tmux
+  - wget 
+# Homebrew Apps
+homebrew::packages:
+  - "reattach-to-user-namespace"
+# Homebrew Casks
+homebrew::casks:
+  - "iterm2-stable"
+  - "emacs-mac"
