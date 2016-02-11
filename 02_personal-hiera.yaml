@@ -1,0 +1,145 @@
+# This file contains all of the settings for my computer
+---
+# Cask Search: http://caskroom.io/search
+# Apple ID Search: https://github.com/xdissent/puppet-appstore
+
+#appstore::appleid: "XXX"
+#appstore::password: "XXX"
+#appstore::store: "us"
+appstore::apps:
+#  "iStat Mini":
+#    source: 'istat-mini/id927292435'
+#  Cyberduck:
+#    source: 'cyberduck/id409222199'
+#  GrimFandango:
+#    source: "grim-fandango-remastered/id1022841309"
+#  Dash:
+#    source: "dash-3-api-docs-snippets./id449589707"
+#  Divvy:
+#    source: "divvy-window-manager/id413857545"
+#  OmniGraffle:
+#    source: "omnigraffle-6/id711830901"
+#  Watts:
+#    source: "watts/id422559334"
+#  "Textual 5":
+#    source: "textual-5/id896450579"
+#  OmniFocus:
+#    source: "omnifocus-2/id867299399"
+#  Slack:
+#    source: "slack/id803453959"
+#  DaisyDisk:
+#    source: "daisydisk/id411643860"
+#  Skitch:
+#    source: "skitch-snap.-mark-up.-share./id425955336"
+#  "YubiKey Personalization Tool":
+#    source: "yubikey-personalization-tool/id638161122"
+#  1Password:
+#    source: "1password-password-manager/id443987910"
+#  Numbers:
+#    source: "numbers/id409203825"
+#  Pocket:
+#    source: "pocket/id568494494"
+#  Keynote:
+#    source: "keynote/id409183694"
+#  Pages:
+#    source: "pages/id409201541"
+#  "Day One":
+#    source: "day-one/id422304217"
+#  Evernote:
+#    source: "evernote/id406056744"
+@  Caffeine:
+@    source: "caffeine/id411246225"
+#  Tweetbot:
+#    source: "tweetbot-for-twitter/id557168941"
+#  "The Unarchiver":
+#    source: "the-unarchiver/id425424353"
+#  "Microsoft Remote Desktop":
+#    source: "microsoft-remote-desktop/id715768417"
+# Boxen Modules
+apps:
+#  - tmux
+  - wget 
+# Homebrew Apps
+homebrew::packages:
+  - "reattach-to-user-namespace"
+#  - "elixir"
+#  - "axel"
+#  - "gnupg2"
+#  - "nmap"
+#  - "pyenv"
+#  - "pyenv-virtualenv"
+#  - "aspell"
+#  - "cmake"
+#  - "dfu-util"
+# Symlinks
+dotfiles::dirs:
+  - .gnupg
+  - bin
+  - .ssh
+dotfiles::files:
+  - .aliases
+  - .env
+  - .gitconfig
+  - .tmux.conf
+  - .vimrc
+  - .zlogin
+  - .zlogout
+  - .zpreztorc
+  - .zprofile
+  - .zshenv
+  - .zshrc
+  - .tmuxinator
+  - .bundle
+  - .spacemacs
+# Homebrew Casks
+homebrew::casks:
+#  - "iterm2-nightly"
+#  - "java"
+#  - "alfred"
+#  - "skype"
+  - "vagrant"
+#  - "steam"
+#  - "spotify"
+  - "vmware-fusion"
+#  - "dropbox"
+#  - "packer"
+#  - "appcleaner"
+  - "flux-beta"
+#  - "arduino"
+  - "screenhero"
+#  - "vyprvpn"
+#  - "teensy"
+#  - "bartender"
+#  - "heroku-toolbelt"
+  - "emacs-mac"
+  - "microsoft-office365"
+#  - "libreoffice"
+#  - "xquartz-beta"
+#  - "unifi-controller"
+#  - "tunnelblick-beta"
+#  - "transmission"
+#  - "sonos"
+#  - "little-snitch"
+#  - "wireshark"
+#  - "apache-directory-studio"
+#  - "tuneup"
+#  - "calibre"
+#  - "cisco-spark"
+#  - "google-drive"
+#  - "firefox"
+#  - "google-chrome"
+#  - "istat-menus"
+#  - "bittorrent-sync"
+#  - "torbrowser"
+#  - "flash"
+#  - "macvim"
+  - "unetbootin"
+#  - "rescuetime"
+#  - "omnifocus"
+#  - "macid"
+#  - "licecap"
+#  - "namebench"
+#  - "tigervnc-viewer"
+#  - "camtasia"
+#  - "smart-scroll"
+#  - "terraform"

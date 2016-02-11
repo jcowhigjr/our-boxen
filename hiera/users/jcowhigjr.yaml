@@ -11,20 +11,59 @@
 #    source: 'istat-mini/id927292435'
 # Boxen Modules
 apps:
-  - tmux
-  - wget 
-  - htop
-# Homebrew Apps
-homebrew::packages:
-#  - "reattach-to-user-namespace"
-# Boxen Modules
-apps:
-  - tmux
-  - wget 
+#  - tmux
+#  - wget
 # Homebrew Apps
 homebrew::packages:
   - "reattach-to-user-namespace"
+  - "qt"
+  - "the_silver_searcher"
+  - "pv" #for progress meters
 # Homebrew Casks
 homebrew::casks:
-  - "iterm2-stable"
-  - "emacs-mac"
+#homebrew/dupes/libiconv #for nokogiri
+#  - "iterm2-beta”
+  - "emacs"
+  - "sublime-text3"
+  - "sourcetree"
+  - "karabiner"
+  - "seil"
+  - "time-out"
+  - "mysqlworkbench"
+  - "flux"
+  - "chrome-devtools"
+  - "minitube"
+  - "dash"
+  - "cheatsheet"
+  - "hipchat"
+  - "joinme"
+  - "microsoft-office365"
+  - "microsoft-lync"
+  - "microsoft-lync-plugin"
+  - "flycut"
+  - "wkhtmltopdf"
+  - "flash"
+  - "flash-player"
+  - "lastpass"
+  - "lynxlet"
+  - "chromium"
+# Symlinks
+dotfiles::dirs:
+  - .gnupg
+  - bin
+dotfiles::files:
+  - .aliases
+  - .env
+  - .gitconfig
+  - .tmux.conf
+  - .vimrc
+  - .zlogin
+  - .zlogout
+  - .zpreztorc
+  - .zprofile
+  - .zshenv
+  - .zshrc
+  - .tmuxinator
+  - .bundle
+  - .spacemacs
+# Homebrew Casks

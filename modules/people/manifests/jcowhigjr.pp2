@@ -1,39 +1,25 @@
 class people::jcowhigjr {
 
-  # other useful packages
-  package {
-    [
-      'htop',
-      'tree',
-      'elinks',
-#      'rbenv',
-#      'direnv',
-    ]:
-  }
-
-include projects::cape-app
-
 #  include emacs   # requires emacs module in Puppetfile
 #  include sparrow # requires sparrow module in Puppetfile
 
 #  $home     = "/Users/${::boxen_user}"
-#  $home      = "/Users/john.cowhig/”
+#   $home      = "/Users/john.cowhig/”
 #  file { $home:
 #    ensure  => directory
 #  }
+   file { $my:
+    ensure  => directory
+  }
+   $my       = "${home}/my"
+   $dotfiles = "${my}/dotfiles"
+   $devfolder = "${home}/my"
 
-#   file { $my:
-#    ensure  => directory
-#  }
-#  $my       = "${home}/my"
-#  $dotfiles = "${my}/dotfiles"
-#   $devfolder = "${home}/my"
 
-
-#  repository { $dotfiles:
-#    source  => 'jcowhigjr/dotfiles',
-#    require => File[$my]
-#  }
+  repository { $dotfiles:
+    source  => 'jcowhigjr/dotfiles',
+    require => File[$my]
+  }
 
 
   #include ::people::jcowhigjr::env_settings
@@ -43,8 +29,8 @@ include projects::cape-app
   $_homebrew_casks = hiera('homebrew::casks', undef)
   $_homebrew_taps = hiera('homebrew::taps', undef)
   $_appstore_apps = hiera('appstore::apps', undef)
-#  $_dotfiles_dirs = hiera('dotfiles::dirs', undef)
-#  $_dotfiles_files = hiera('dotfiles::dirs', undef)
+  $_dotfiles_dirs = hiera('dotfiles::dirs', undef)
+  $_dotfiles_files = hiera('dotfiles::dirs', undef)
   $_homedir = "/Users/${::luser}"
   
   if $_apps {
@@ -85,19 +71,19 @@ include projects::cape-app
     }
   }
 
-
 #  if $_dotfiles_dirs {
-#   include ::dotfiles::dirs
-#     package { $_dotfiles_dirs: 
-#     ensure   => present 
-#     }
-#  }
+#    include ::dotfiles::dirs
+#        package { $_dotfiles::dirs
+#      ensure   => present    }
+#    }
 
+  
   ## Dotfiles
  # include ::dotfiles
- # #::dotfiles::dir { '.ssh':
+ # ::dotfiles::dir { '.ssh':
  #   mode => '0700',
  # }
+
   repository { "${_homedir}/.zprezto":
     source => 'sorin-ionescu/prezto',
     extra  => [
