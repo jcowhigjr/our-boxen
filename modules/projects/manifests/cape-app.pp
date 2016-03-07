@@ -3,7 +3,7 @@
 class projects::cape-app {
   #include icu4c
  # include phantomjs
-#   include ghostscript
+   include ghostscript
    include imagemagick
    include graphviz
  #  include qt

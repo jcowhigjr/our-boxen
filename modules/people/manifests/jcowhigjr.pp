@@ -13,7 +13,7 @@ class people::jcowhigjr {
 
 include projects::cape-app
 
-#  include emacs   # requires emacs module in Puppetfile
+include emacs   # requires emacs module in Puppetfile
 #  include sparrow # requires sparrow module in Puppetfile
 
 #  $home     = "/Users/${::boxen_user}"
@@ -46,7 +46,7 @@ include projects::cape-app
 #  $_dotfiles_dirs = hiera('dotfiles::dirs', undef)
 #  $_dotfiles_files = hiera('dotfiles::dirs', undef)
   $_homedir = "/Users/${::luser}"
-  
+
   if $_apps {
     validate_array($_apps)
     include $_apps
@@ -88,8 +88,8 @@ include projects::cape-app
 
 #  if $_dotfiles_dirs {
 #   include ::dotfiles::dirs
-#     package { $_dotfiles_dirs: 
-#     ensure   => present 
+#     package { $_dotfiles_dirs:
+#     ensure   => present
 #     }
 #  }
 

@@ -47,6 +47,15 @@ homebrew::casks:
   - "lastpass"
   - "lynxlet"
   - "chromium"
+  - "webstorm"
+  - "atom"
+  - "rubymine"
+  - "electron"
+  - "vlc"
+  - "vox"
+  - "adium"
+  - "grandperspective"
+  - "coreutils"
 # Symlinks
 dotfiles::dirs:
   - .gnupg
