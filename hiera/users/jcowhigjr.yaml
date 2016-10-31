@@ -16,13 +16,12 @@ apps:
 # Homebrew Apps
 homebrew::packages:
   - "reattach-to-user-namespace"
-  - "qt"
+  - "qt5"
   - "the_silver_searcher"
   - "pv" #for progress meters
 # Homebrew Casks
 homebrew::casks:
 #homebrew/dupes/libiconv #for nokogiri
-#  - "iterm2-beta”
   - "emacs"
   - "sublime-text3"
   - "sourcetree"
@@ -55,7 +54,6 @@ homebrew::casks:
   - "vox"
   - "adium"
   - "grandperspective"
-  - "coreutils"
 # Symlinks
 dotfiles::dirs:
   - .gnupg

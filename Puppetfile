@@ -68,6 +68,10 @@ github "xquartz",     "1.2.1"
   github "swig" #for graphviz
   github "pcre" #for graphviz
   github "emacs"
+  github "memcached"
+  github "autoconf" #for ghostscript
+  github "libtool"  #for ghostscript
+
 #`  github "qt", ">= 1.4.0", :repo => "bongardino/puppet-qt" #https://github.com/Homebrew/homebrew/issues/42370
 # github "postgresql",  "4.0.1"
 # github "redis",       "3.1.0"

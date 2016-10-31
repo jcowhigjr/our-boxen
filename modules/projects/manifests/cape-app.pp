@@ -32,14 +32,14 @@ class projects::cape-app {
 $version = "2.1.7"
 ruby_gem { "bundler for ${version}":
   gem          => 'bundler',
-  version      => '~> 1.10.6',
+  version      => '>= 1.12.5',
   ruby_version => $version,
 }
 
 # ensure a gem is installed for all ruby versions
 ruby_gem { 'bundler for all rubies':
   gem          => 'bundler',
-  version      => '~> 1.0',
+  version      => '~> 1.12',
   ruby_version => '*',
 }
 
@@ -50,6 +50,7 @@ ruby_gem { 'bundler for all rubies':
   #  nginx         => false,
   #  passenger     => false,
   #  redis         => true,
+    memcached    => true,
     ruby          => '2.1.7',
     source        => 'https://john.cowhig@stash.parkmobile.com/scm/uscape/cape-app.git'
   }
