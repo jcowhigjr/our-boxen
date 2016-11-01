@@ -10,6 +10,7 @@ class projects::cape-app {
    include swig
    include pcre
    include mysql
+   mysql::db { 'cape_development': }
    include openssl #if eventmachine gem fails# brew link openssl --force
    #bug fix for eventmachine https://github.com/eventmachine/eventmachine/issues/602 brew link openssl --force
 #[client]
@@ -26,6 +27,7 @@ class projects::cape-app {
 #ruby::local { '/path/to/some/project':
 #  version => '2.2.2'
 #}
+ruby::version { '2.1.7': }
 
 # ensure a gem is installed for a certain ruby version
 # note, you can't have duplicate resource names so you have to name like so
@@ -42,16 +44,29 @@ ruby_gem { 'bundler for all rubies':
   version      => '~> 1.12',
   ruby_version => '*',
 }
+include git
+
+#git::config::local { 'repo_specific_email':
+#  ensure => present,
+#  repo   => '/path/to/my/repo',
+#  key    => 'user.email',
+#  value  => 'turnt@example.com'
+#}
+
+#git::config::local { 'user.email':
+#  value  => 'john.cowhig@parkmobileglobal.com'
+#}
 
   boxen::project { 'cape-app':
-    dotenv        => true,
+    dotenv        => false,
   #  elasticsearch => true,
     mysql         => true,
-  #  nginx         => false,
+  #  nginx         => true,
   #  passenger     => false,
   #  redis         => true,
     memcached    => true,
     ruby          => '2.1.7',
-    source        => 'https://john.cowhig@stash.parkmobile.com/scm/uscape/cape-app.git'
+    source        => 'ssh://git@stash-ssh.parkmobile.com:7999/uscape/cape-app.git'
+    #config => { 'credential.helper' => "/usr/local/bin/git-credential-osxkeychain" }
   }
 }

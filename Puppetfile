@@ -67,7 +67,6 @@ github "xquartz",     "1.2.1"
   github "graphviz"
   github "swig" #for graphviz
   github "pcre" #for graphviz
-  github "emacs"
   github "memcached"
   github "autoconf" #for ghostscript
   github "libtool"  #for ghostscript

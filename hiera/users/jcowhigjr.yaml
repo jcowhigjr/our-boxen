@@ -19,11 +19,12 @@ homebrew::packages:
   - "qt5"
   - "the_silver_searcher"
   - "pv" #for progress meters
+  - "git-flow-avh"
 # Homebrew Casks
 homebrew::casks:
 #homebrew/dupes/libiconv #for nokogiri
   - "emacs"
-  - "sublime-text3"
+  - "sublime-text"
   - "sourcetree"
   - "karabiner"
   - "seil"
@@ -36,12 +37,8 @@ homebrew::casks:
   - "cheatsheet"
   - "hipchat"
   - "joinme"
-  - "microsoft-office365"
-  - "microsoft-lync"
-  - "microsoft-lync-plugin"
   - "flycut"
   - "wkhtmltopdf"
-  - "flash"
   - "flash-player"
   - "lastpass"
   - "lynxlet"
@@ -54,6 +51,7 @@ homebrew::casks:
   - "vox"
   - "adium"
   - "grandperspective"
+  - "mosh"
 # Symlinks
 dotfiles::dirs:
   - .gnupg

@@ -55,12 +55,7 @@ node default {
   # core modules, needed for most things
   include dnsmasq
   include git
-  include hub  # Set the global version of PhantomJS (version should be installed already)
-#include phantomjs
-#  phantomjs::global { '1.9.2': }
-
-
-
+  include hub
   include nginx
 
   # fail if FDE is not enabled
