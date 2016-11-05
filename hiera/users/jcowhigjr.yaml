@@ -16,7 +16,7 @@ apps:
 # Homebrew Apps
 homebrew::packages:
   - "reattach-to-user-namespace"
-  - "qt5"
+  - "qt55"
   - "the_silver_searcher"
   - "pv" #for progress meters
   - "git-flow-avh"
@@ -52,6 +52,7 @@ homebrew::casks:
   - "adium"
   - "grandperspective"
   - "mosh"
+  - "caffeine"
 # Symlinks
 dotfiles::dirs:
   - .gnupg

@@ -6,9 +6,11 @@ class projects::cape-app {
    include ghostscript
    include imagemagick
    include graphviz
- #  include qt
    include swig
    include pcre
+  #xquartz is required https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit#macos-sierra-1012
+   #include qt make sure that you have qt55 in your yaml
+   include xquartz
    include mysql
    mysql::db { 'cape_development': }
    include openssl #if eventmachine gem fails# brew link openssl --force
@@ -34,14 +36,14 @@ ruby::version { '2.1.7': }
 $version = "2.1.7"
 ruby_gem { "bundler for ${version}":
   gem          => 'bundler',
-  version      => '>= 1.12.5',
+  version      => '= 1.12.5',
   ruby_version => $version,
 }
 
 # ensure a gem is installed for all ruby versions
 ruby_gem { 'bundler for all rubies':
   gem          => 'bundler',
-  version      => '~> 1.12',
+  version      => '= 1.12.5',
   ruby_version => '*',
 }
 include git
