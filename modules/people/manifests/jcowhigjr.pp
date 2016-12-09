@@ -6,6 +6,7 @@ class people::jcowhigjr {
       'htop',
       'tree',
       'elinks',
+      'wget',
 #      'rbenv',
 #      'direnv',
     ]:
