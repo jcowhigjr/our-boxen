@@ -54,6 +54,15 @@ homebrew::casks:
   - "grandperspective"
   - "mosh"
   - "caffeine"
+  - "skype-for-business"
+  - "postman"
+  - "etcher"
+  - "mysql-utilities"
+  - "mysql-shell"
+  - "sqlpro-for-mysql"
+  - "airfoil"
+  - "chefdk"
+  - "screenhero"
 # Symlinks
 dotfiles::dirs:
   - .gnupg
