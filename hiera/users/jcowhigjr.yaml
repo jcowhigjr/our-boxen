@@ -21,6 +21,12 @@ homebrew::packages:
   - "pv" #for progress meters
   - "git-flow-avh"
   - "terraform"
+  - "geckodriver"
+  - "chromedriver"
+  - "selenium-server-standalone"
+  - "cmake"
+  - "shellcheck"
+  - "ncdu"
 # Homebrew Casks
 homebrew::casks:
 #homebrew/dupes/libiconv #for nokogiri
@@ -36,7 +42,7 @@ homebrew::casks:
   - "minitube"
   - "dash"
   - "cheatsheet"
-  - "hipchat"
+  # - "hipchat"
   - "joinme"
   - "flycut"
   - "wkhtmltopdf"
@@ -63,6 +69,16 @@ homebrew::casks:
   - "airfoil"
   - "chefdk"
   - "screenhero"
+  - "rssowl"
+  - "tubbler"
+  - "bluestacks"
+  - "iterm2"
+  - "firefox"
+  - "vagrant"
+  - "vagrant-manager"
+  - "virtualbox"
+  # - "virtualbox-extension-pack" #broken
+  - "istat-menus"
 # Symlinks
 dotfiles::dirs:
   - .gnupg
