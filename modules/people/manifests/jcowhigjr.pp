@@ -13,6 +13,7 @@ class people::jcowhigjr {
   }
 
 include projects::cape-app
+#include projects::rails5-app
 
 #  include sparrow # requires sparrow module in Puppetfile
 

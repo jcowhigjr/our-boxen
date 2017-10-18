@@ -27,6 +27,10 @@ homebrew::packages:
   - "cmake"
   - "shellcheck"
   - "ncdu"
+  - "yarn"
+  - "bash-completion"
+  - "mitmproxy" #http://mitmproxy.org
+  # - "phantomjs"
 # Homebrew Casks
 homebrew::casks:
 #homebrew/dupes/libiconv #for nokogiri
@@ -79,6 +83,15 @@ homebrew::casks:
   - "virtualbox"
   # - "virtualbox-extension-pack" #broken
   - "istat-menus"
+  - "istumbler"
+  - "vpaint"
+  - "pixi-paint"
+  - "gpodder"
+  - "clementine"
+  - "sequel-pro"
+  - "visual-studio-code"
+  - "paw"
+  # - "gimp"
 # Symlinks
 dotfiles::dirs:
   - .gnupg
@@ -99,3 +112,21 @@ dotfiles::files:
   - .bundle
   - .spacemacs
 # Homebrew Casks
+
+
+# See https://github.com/boxen/puppet-ruby for docs
+# ruby::build::ensure: "2.3.3"
+  # - "2.4.0"
+
+# ruby::global::version: "2.2.3"
+# ruby::build::ensure: "v20151024"
+# ruby::rbenv_plugins:
+#   rbenv-vars:
+#     ensure: v1.0.0
+#     source: sstephenson/rbenv-vars
+# ruby::version::alias:
+#   # 2.0.0: 2.0.0-p647
+
+
+# See https://github.com/boxen/puppet-java for docs
+java::update_version: 51

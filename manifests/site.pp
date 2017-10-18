@@ -63,16 +63,26 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
+  # https://github.com/nodenv/node-build-update-defs
+  #in the shell run:
+  #git clone https://github.com/nodenv/node-build-update-defs.git "$(nodenv root)"/plugins/node-build-update-defs
+  # cd "$(nodenv root)"/plugins/node-build-update-def
+
+  # cd "$(nodenv root)"/plugins/node-build-update-defs
+  # nodenv local
+  # nodenv update && nodenv rehash && nodenv update-version-defs
+  # nodenv install --list
+  # nodenv install 6.x-next
+
   # node versions
-  nodejs::version { '0.8': }
-  nodejs::version { '0.10': }
   nodejs::version { '0.12': }
+  nodejs::version { '6.11.3': }
+
 
   # default ruby versions
-  ruby::version { '1.9.3': }
-  ruby::version { '2.0.0': }
-  ruby::version { '2.1.8': }
   ruby::version { '2.2.4': }
+  ruby::version { '2.3.5': }
+  ruby::version { '2.4.2': }
 
   # common, useful packages
   package {

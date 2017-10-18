@@ -2,7 +2,7 @@
 #you'll now be able to run its local server and visit http://cape_app.dev/ to access the app in dev.
 class projects::cape-app {
   #include icu4c
- # include phantomjs
+   include phantomjs
    include ghostscript
    include imagemagick
    include graphviz
@@ -36,14 +36,14 @@ ruby::version { '2.1.7': }
 $version = "2.1.7"
 ruby_gem { "bundler for ${version}":
   gem          => 'bundler',
-  version      => '= 1.12.5',
+  version      => '~> 1.15',
   ruby_version => $version,
 }
 
 # ensure a gem is installed for all ruby versions
 ruby_gem { 'bundler for all rubies':
   gem          => 'bundler',
-  version      => '= 1.12.5',
+  version      => '~> 1.15',
   ruby_version => '*',
 }
 include git
@@ -68,6 +68,7 @@ include git
   #  redis         => true,
     memcached    => true,
     ruby          => '2.1.7',
+    phantomjs     => '2.1.1',
     source        => 'ssh://git@stash-ssh.parkmobile.com:7999/uscape/cape-app.git'
     #config => { 'credential.helper' => "/usr/local/bin/git-credential-osxkeychain" }
   }
