@@ -61,13 +61,13 @@ github "xquartz",     "1.2.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 # github "elasticsearch", "2.8.0"
-  # github "mysql",       ">= 2.1.2.1", :repo => "crafterm/puppet-mysql" #fixes checksum error
+  github "mysql",       ">= 2.1.2.1", :repo => "crafterm/puppet-mysql" #fixes checksum error
   # github "ghostscript"
   # github "imagemagick"
   # github "graphviz"
   # github "swig" #for graphviz
   # github "pcre" #for graphviz
-  # github "memcached"
+#  github "memcached"
   # github "autoconf" #for ghostscript
   # github "libtool"  #for ghostscript
 # github "mysql",         "2.0.1"

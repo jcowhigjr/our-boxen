@@ -2,12 +2,12 @@
 #you'll now be able to run its local server and visit http://cape_app.dev/ to access the app in dev.
 class projects::cape-app {
   #include icu4c
-   include phantomjs
-   include ghostscript
-   include imagemagick
-   include graphviz
-   include swig
-   include pcre
+  # include phantomjs
+  # include ghostscript
+  # include imagemagick
+  # include graphviz
+  # include swig
+  # include pcre
   #xquartz is required https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit#macos-sierra-1012
    #include qt make sure that you have qt55 in your yaml
    include xquartz
@@ -66,7 +66,7 @@ include git
   #  nginx         => true,
   #  passenger     => false,
   #  redis         => true,
-    memcached    => true,
+  #  memcached    => true,
     ruby          => '2.1.7',
     phantomjs     => '2.1.1',
     source        => 'ssh://git@stash-ssh.parkmobile.com:7999/uscape/cape-app.git'
